@@ -1,38 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 .App {
-  text-align: center;
+	display: flex;
+}
+.container {
+	/* background:linear-gradient(135deg,#850c62,#f80759); */
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.app.wrapper {
+	background-color: #fff;
+	min-width: 350px;
+	min-height: 650px;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+	color: rgb(32, 178, 134);
+	text-align: center;
+	margin: 80px 0px 40px 0px;
+}
+.title-heading {
+	color: rgb(32, 178, 134);
+	text-align: center;
+	margin: 80px 0px 0px 0px;
+}
+.title-sub {
+	text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name,
+.email,
+.password {
+	margin: 20px;
+	color: #969292;
+	font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.password {
+	margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+	height: 32px;
+	font-size: 20px;
+	outline: none;
+	width: 100%;
+	/* border-top-style: none;
+	border-left-style: none;
+	border-right-style: none; */
+	border-style: 1px solid black;
+	margin-bottom: 10px;
+}
+.error {
+	color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit {
+	display: flex;
+	text-transform: uppercase;
+	font-size: 20px;
+	border-radius: 25px;
+	color: white;
+	padding: 10px 60px;
+	background: rgb(32, 178, 134);
+	margin: auto;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+
+button:active {
+	transform: translateY(2px);
+}
+
+.form-success {
+	display: flex;
+	justify-content: center;
+	margin-top: 250px;
+	min-width: 370px;
+	color: rgb(32, 178, 134);
+}
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+.img {
+	width: 1200px;
+	height: 1000px;
+  margin-right: 200px;
 }
